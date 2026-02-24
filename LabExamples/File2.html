@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>JavaScript Example</title>
+    <script type="text/javascript">
+      function getHeader() {
+        return "<h1>Main Heading</h1>";
+      }
+      function getPara() {
+        return "<p align=justify;>This is para content</p>";
+      }
+      function multiply(num1, num2) {
+        return num1 * num2;
+      }
+      function addition(num1, num2, num3) {
+        return num1 + num2 + num3;
+      }
+
+      function getResponse() {
+        document.write(getHeader());
+        document.write("<h2>Hello This is Heading 2</h2>");
+        document.write(getPara());
+        document.write(multiply(12, 12));
+        $result = addition(1, 2, 5);
+        document.write("<br/>" + $result);
+      }
+    </script>
+  </head>
+  <body>
+     <script>
+      getResponse();
+    </script>
+    <h1>Before Content</h1>
+   
+  </body>
+</html>

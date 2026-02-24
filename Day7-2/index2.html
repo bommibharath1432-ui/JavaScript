@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+  </head>
+  <body id="main"></body>
+      <script>
+      let bodyElement = document.getElementById("main");
+      let divElement = document.createElement("div");
+      let h1Element = document.createElement("h1");
+      let paraElement = document.createElement("p");
+      h1Element.innerHTML = "What is Java Script ?";
+      paraElement.innerHTML =
+        "Javascript is developed by Google. It Works V8Chrome Engine";
+      bodyElement.appendChild(divElement);
+      divElement.appendChild(h1Element);
+      divElement.appendChild(paraElement);
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head><title>Validations</title>
+<script>
+function myFunction() {
+    var obj = document.getElementById("id1");
+	
+    if (obj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = obj.validationMessage;
+    }
+	else
+	{
+	    document.getElementById("demo").innerHTML = "";
+	}
+}
+</script>
+</head>
+<body>
+
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+<p id="demo">
+Error show this area
+</p>
+</body>
+</html>

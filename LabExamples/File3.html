@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sum of Two Numbers</title>
+
+<script>
+function myFunction()
+{
+
+let inputElement1=document.getElementById("txt1");
+let inputElement2=document.getElementById("txt2");
+let a=parseInt(inputElement1.value);
+let b=parseInt(inputElement2.value);
+
+let c = a + b;
+alert("The Sum of A and B is " + c);
+document.getElementById("para").innerHTML=c;
+}
+</script>
+</head>
+<body>
+<div >
+A Value <input type="textbox" id="txt1"/><br />
+B Value <input type="textbox" id="txt2"/> <br/>
+<p id="para" >
+Result Place Here
+</p>
+<button  type="button" onclick="myFunction()">Print Sum</button>
+</div>
+</body>
+
+</html>

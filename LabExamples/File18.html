@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+function sayHai(name, age)
+{
+//document.write (name + " is " + age + " years old.");
+document.getElementById("presult").innerHTML=name + " is " + age + " years old.";
+}
+function sayToHai()
+{
+
+let userNameElement=document.getElementById("uname");
+let userAgeElement=document.getElementById("uage")
+let uname=userNameElement.value;
+let uage=userAgeElement.value;
+//document.write (uname + " is " + uage + " years old.");
+document.getElementById("presult").innerHTML=uname + " is " + uage + " years old.";
+console.log(uname + " is " + uage + " years old.");
+
+}
+</script>
+</head>
+<body>
+<h1>KKCC INFO SYSTEMS</H1>
+<p>Click the following button to call the function</p>
+<form>
+<input type="text" id="uname" name="uname"/>
+<input type="number" id="uage" name="uage"/>
+<input type="date" id="udate" name="udate"/>
+<input type="time" id="time" name="utime"/>
+<input type="button" onclick="sayHai('Srinivas', 44)" value="Say Hai">
+<input type="button" onclick="sayToHai()" value="Say To Hai">
+<p id="presult"></p>
+<script>
+document.write("</br><h2>Hello</h2></br>");
+document.write("SrinivasaRao</br>");
+</script>
+</form>
+</body>
+</html>

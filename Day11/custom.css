@@ -1,0 +1,15 @@
+.traffic-bar {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+}
+button{
+    background-color: aqua;
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+
+}

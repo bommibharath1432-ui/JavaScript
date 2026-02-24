@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/custom.css">
+  </head>
+  <body>
+    <form method="POST">
+
+        <div class="container">
+          <div class="form-group">
+            <label>Bill Amount</label>
+            <input type="number" id="bill_amount" />
+          </div>
+          <div class="form-group">
+            <label>Discount</label>
+            <input type="number" onblur="getGrossBill()" id="discount" />
+          </div>
+          <div class="form-group">
+            <label>Gross Bill</label>
+            <input type="number" readonly id="gross_bill" />
+          </div>
+          <div class="form-columns">
+            <div class="form-group">
+              <label>Tax %</label>
+              <input type="number" onblur="getTaxAndNetAmount()" id="tax_percentage" />
+            </div>
+            <div class="form-group">
+              <label>Tax Amount</label>
+              <input type="number"  readonly id="tax_amount" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Net Amount</label>
+            <input type="number" id="net_amount" />
+          </div>
+          <div class="form-group">
+            <label>Tip Amount</label>
+            <input type="number" onblur="getPayableAmount()" id="tip_amount" />
+          </div>
+          <div class="form-group">
+            <label>Payable Bill Amount</label>
+            <input type="number" readonly id="pay_amount" />
+          </div>
+          <div class="form-columns">
+            <div class="form-group">
+              <label>Split Bill</label>
+              <input type="number" onblur="getForEachAmount()" id="split_bill" />
+            </div>
+            <div class="form-group">
+              <label>For Each</label>
+              <input type="number" readonly id="for_each" />
+            </div>
+          </div>
+          <div class="button-group">
+            <button id="pay">Pay</button>
+            <button id="reset" type="reset">Clear</button>
+          </div>
+        </div>
+    </form>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

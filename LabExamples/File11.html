@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+
+function MyWindow(message) {
+now = new Date();
+LocalTime = now.toLocaleString();
+contents='<html>';
+contents=contents + '<head><title>PopUp</title></head>';
+contents=contents + '<body>';
+contents=contents +'<h1>'+message+'</h1><A HREF="javascript:window.close()" >';
+contents=contents + 'Back</A>'
+contents=contents + '</body>';
+contents=contents + '</html>';
+/*alert(contents);*/
+options="toolbar=0,status=0,menubar=0,scrollbars=0,resizable=0,width=300,height=200";
+
+newwindow=window.open("","mywindow", options);
+newwindow.document.write(LocalTime);
+newwindow.document.write(contents);
+newwindow.document.close();
+}
+/*
+function MyWindow() {
+now = new Date();
+let message=document.getElementById("text1").value;
+LocalTime = now.toLocaleString();
+contents='<html>';
+contents=contents + '<head><title>PopUp</title></head>';
+contents=contents + '<body>';
+contents=contents +'<h1>'+message+'</h1><A HREF="javascript:window.close()" >';
+contents=contents + 'Back</A>'
+contents=contents + '</body>';
+contents=contents + '</html>';
+alert(contents);
+options="toolbar=0,status=0,menubar=0,scrollbars=0,resizable=0,width=300,height=200";
+
+newwindow=window.open("","mywindow", options);
+newwindow.document.write(LocalTime);
+newwindow.document.write(contents);
+newwindow.document.close();
+}*/
+</SCRIPT>
+
+</HEAD>
+<BODY bgcolor="white" onLoad="this.form1.text1.focus()">
+
+<TABLE BORDER=1 bgcolor="beige">
+<tr>
+<td>
+<B>Type a message in the box, 
+<br>it will become a link to close the new window.</B>
+<FORM NAME="form1">
+<INPUT NAME="text1" id="text1" TYPE=Text SIZE="50" MAXLENGTH="50"><br>
+<INPUT TYPE=Button VALUE="Create my window" onClick="MyWindow(form1.text1.value)">
+<!--<INPUT TYPE=Button VALUE="Create my window" onClick="MyWindow()">-->
+</FORM>
+</td>
+</tr>
+</TABLE>
+
+</br>
+
+</BODY>
+</HTML>

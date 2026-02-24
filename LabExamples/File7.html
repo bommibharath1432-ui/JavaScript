@@ -1,0 +1,51 @@
+<html>
+<head><title>hellow</title>
+<script>
+function myFun(x)
+{
+var c;
+var a,b;
+a=parseInt(document.getElementById("txt1").value);
+b=parseInt(document.getElementById("txt2").value);
+c=parseInt(x);
+switch(c)
+{
+case 1:
+document.getElementById("Result").innerHTML=a+b;
+break;
+case 2:
+document.getElementById("Result").innerHTML=a-b;
+break;
+case 3:
+document.getElementById("Result").innerHTML=(a*b);
+break;
+case 4:
+document.getElementById("Result").innerHTML=(a/b);
+break;
+case 5:
+document.getElementById("Result").innerHTML=(a%b);
+break;
+default:
+document.getElementById("Result").innerHTML="Out of Selection";
+document.getElementById("txt1").value="";
+document.getElementById("txt2").value="";
+}
+}
+</script>
+</head>
+<body>
+
+A Value <input type="textbox" id="txt1"/></br>
+B Value <input type="textbox" id="txt2"/></br>
+<p id="Result">
+Result Place Here
+</p>
+<button id="1" type="button" onclick="myFun(this.id)">Additon</button>
+<button id="2" type="button" onclick="myFun(this.id)">Subtraction</button>
+<button id="3" type="button" onclick="myFun(this.id)">Multiplication</button>
+<button id="4" type="button" onclick="myFun(this.id)">Division</button>
+<button id="5" type="button" onclick="myFun(this.id)">Modulus</button>
+<button id="16" type="button" onclick="myFun(this.id)">Exit</button>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript">
+function addString(first, last)
+{
+var full;
+full = first + '.' + last;
+return full;
+}
+function showFullName()
+{
+var result,firstname,lastname;
+firstname=document.getElementById("fname").value;
+lastname=document.getElementById("lname").value;
+result = addString(firstname,lastname);
+//document.write (result );
+document.getElementById("result").innerHTML=result;
+}
+</script>
+</head>
+Say Hello
+
+<body>
+<p>Click the following button to call the function</p>
+<form>
+<input type="text" id="fname" name="fname"></br>
+<input type="text" id="lname" name="lname"></br>
+<input type="button" onclick="showFullName()" value="Show Full Name">
+<p id="result"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function func(x,y)
+{
+return(x+y);
+}
+function secondFunction(){
+var result;
+result = func(10,20);
+//document.write ( result );
+document.getElementById("result").innerHTML=result;
+}
+</script>
+</head>
+<body>
+<p>Click the following button to call the function</p>
+<form>
+<input type="button" onclick="secondFunction()" value="Call Function">
+<p id="result"></p>
+</form>
+
+</body>
+</html>

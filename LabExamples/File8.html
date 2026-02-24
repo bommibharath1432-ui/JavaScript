@@ -1,0 +1,48 @@
+<html>
+<head><title>Switch Case With Characters</title>
+<script>
+function myFun(x)
+{
+
+	let inputElementA=document.getElementById("txt1");
+	let inputElementB=document.getElementById("txt2");
+	let a=parseInt(inputElementA.value);
+	let b=parseInt(inputElementB.value);
+	switch(x)
+	{
+	case '+':
+	document.getElementById("Result").innerHTML=a+b;
+	break;
+	case '-':
+	document.getElementById("Result").innerHTML=a-b;
+	break;
+	case '*':
+	document.getElementById("Result").innerHTML=(a*b);
+	break;
+	case '/':
+	document.getElementById("Result").innerHTML=(a/b);
+	break;
+	case '%':
+	document.getElementById("Result").innerHTML=(a%b);
+	break;
+	default:
+	document.getElementById("Result").innerHTML="Out of Selection";
+	}
+}
+</script>
+</head>
+<body>
+
+A Value <input type="textbox" id="txt1"/></br>
+B Value <input type="textbox" id="txt2"/></br>
+<p id="Result">
+Result Place Here
+</p>
+<button id="+" type="button" onclick="myFun(this.id)">+</button>
+<button id="-" type="button" onclick="myFun(this.id)">-</button>
+<button id="*" type="button" onclick="myFun(this.id)">X</button>
+<button id="/" type="button" onclick="myFun(this.id)">/</button>
+<button id="%" type="button" onclick="myFun(this.id)">%</button>
+</body>
+
+</html>

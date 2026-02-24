@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal Java Script</title>
+<script type="text/javascript">
+function showGreeting()
+{
+let inputUserNameElement=document.getElementById("myname").value;
+alert("Welcome to " + inputUserNameElement);
+}
+function showcontent()
+{
+let paraElement=document.getElementById('para');
+alert('You are Inside of the ShowContent Method');
+paraElement.innerHTML = 'Hello JavaScript!';
+paraElement.style.fontSize = '25px';
+paraElement.style.color='green';
+
+}
+function showaddress()
+{
+document.getElementById('MyAddress').innerHTML = '<address>KKCC INFO SYSTEMS</BR>SUJATHA NAGAR,</BR>Ongole.</address>';
+}
+function setstyle()
+{
+alert("your Selection is Styles");
+document.getElementById('para').style.fontSize='35px';
+document.getElementById('para').style.color='red';
+document.getElementById('para').style.padding='5px';
+}
+</script>
+</head>
+
+<body>
+
+
+<h1>Java Script Example</h1>
+<input type="text" id="myname">
+<p id="para">How to Change the Html Content.</p>
+<button type="button" onclick="showcontent()">Show Content</button>
+<button type="button" onclick="setstyle()">Show Styles</button>
+<button type="button" onclick="showaddress()">Show My Addres</button>
+<button type="button" onclick="showGreeting()">WelcomeMessage</button>
+<div id="MyDiv" style="background-color:purple;color:white;">
+KKCC INFO SYSTEMS
+</div>
+<div id="MyAddress"></div>
+</body>
+</html>

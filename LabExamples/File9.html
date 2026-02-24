@@ -1,0 +1,34 @@
+<HTML>
+<HEAD><title>Background Color Change Dynamically</title>
+<SCRIPT LANGUAGE="JavaScript">
+function changecolor(code) 
+{
+document.bgColor=code
+}
+function changebg()
+{
+let scolor=document.getElementById("bgcolor").value;
+document.bgColor=scolor;
+}
+</SCRIPT>
+
+</HEAD>
+<BODY>
+
+
+<input id ="red" type="button" name="Button1" value="RED" onclick="changecolor(this.id)">
+
+<input type="button" name="Button2" value="GREEN" onclick="changecolor('green')">
+
+<input type="button" name="Button3" value="BLUE" onclick="changecolor('blue')">
+
+<input type="button" name="Button4" value="WHITE" onclick="changecolor('white')">
+<br/>
+<input type="text" name="bgcolor" id="bgcolor"/>
+<input type="button" name="Button5" value="ChangeBgColor" onclick="changebg()">
+
+
+
+
+</BODY>
+</HTML>

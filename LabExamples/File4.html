@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><title>Math Operations</title>
+<script>
+
+function mAddition()
+{
+let a=parseInt(document.getElementById("txt1").value);
+let b=parseInt(document.getElementById("txt2").value);
+let result="";
+result=a + b;
+document.getElementById("Result").innerHTML=result;
+}
+
+function mSubtraction()
+{
+let a=parseInt(document.getElementById("txt1").value);
+let b=parseInt(document.getElementById("txt2").value);
+let result="";
+result=a - b;
+
+document.getElementById("Result").innerHTML=result;
+}
+function mMultiplication()
+{
+let a=parseInt(document.getElementById("txt1").value);
+let b=parseInt(document.getElementById("txt2").value);
+let result="";
+result=a * b;
+
+document.getElementById("Result").innerHTML=result;
+}
+function mDivision()
+{
+let a=parseInt(document.getElementById("txt1").value);
+let b=parseInt(document.getElementById("txt2").value);
+let result="";
+result=a / b;
+
+document.getElementById("Result").innerHTML=result;
+}
+function mRemainder()
+{
+let a=parseInt(document.getElementById("txt1").value);
+let b=parseInt(document.getElementById("txt2").value);
+let result="";
+result=a % b;
+
+document.getElementById("Result").innerHTML=result;
+}
+
+</script>
+</head>
+<body>
+
+
+A Value <input type="number" id="txt1"/></br>
+B Value <input type="number" id="txt2"/></br>
+<p id="Result">
+Result Place Here
+</p>
+
+<button type="button" onclick="mAddition()">Addition</button>
+<button type="button" onclick="mSubtraction()">Subtraction</button>
+<button type="button" onclick="mMultiplication()">Multiplication</button>
+<button type="button" onclick="mDivision()">Division</button>
+<button type="button" onclick="mRemainder()">Remainder</button>
+
+</body>
+
+</html>

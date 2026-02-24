@@ -1,0 +1,55 @@
+
+<html>
+<head><title>on blur and on focus</title>
+<SCRIPT>
+function getSelect(optionlocations) 
+{
+  return optionlocations.options[optionlocations.selectedIndex].value
+}
+
+function pushBox(checked) 
+{
+if (checked==true) 
+{
+alert(" LIFT OFF! ")
+} 
+else
+{
+alert(" LIFT ON! ")
+}
+}
+
+function MsgBox()
+{
+alert('Your page Lifecycle is Start')
+}
+function getsum()
+{
+var a,b;
+a=parseInt(document.getElementById("inputa").value);
+b=parseInt(document.getElementById("inputb").value);
+document.getElementById("txtresult").value=a + b;
+}
+</SCRIPT>
+</head>
+
+<body onLoad="MsgBox()"  >
+<FORM method="post" action="File1.html">
+<INPUT id="inputa" TYPE=NUMBER SIZE=20 >
+<INPUT TYPE=NUMBER id="inputb" SIZE=20 onBlur="getsum()">
+<INPUT TYPE=NUMBER id="txtresult" SIZE=20 >
+<INPUT TYPE=password SIZE=10 maxlength=10 >
+
+<SELECT NAME="list" SIZE=1 OnChange="location=getSelect(this)">
+<OPTION value="#"> Choose a search engine</OPTION>
+<OPTION value="http://www.yahoo.com"> Yahoo</OPTION>
+<OPTION value="http://www.google.com"> google</OPTION>
+<OPTION value="http://www.rediff.com"> rediff</OPTION>
+</SELECT>
+
+<INPUT TYPE=checkbox NAME="Lift" OnClick="pushBox(form.Lift.checked)">
+Lift On/Off
+<input type="submit" value="Submit"/>
+</FORM>
+</body>
+</html>

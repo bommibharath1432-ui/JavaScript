@@ -1,0 +1,58 @@
+<html>
+<head><title>If Condition Statment</title>
+<script>
+function checkEvenorOdd()
+{
+let inputElementtext=document.getElementById("txt1");
+let inputElementpara=document.getElementById("Result");
+let n=parseInt(inputElementtext.value);
+if(n%2==0)
+{
+alert("This is Even Number")
+inputElementpara.innerHTML="This is Even " + n;
+}
+else
+{
+alert("This is Odd Number")
+inputElementpara.innerHTML="This is Odd " + n;
+}
+}
+
+
+function checkPrime()
+{
+let n=parseInt(document.getElementById("txt1").value);
+let i=1;
+let cnt=0;
+while(i<=n)
+{
+	if(n%i==0)
+	{
+	cnt=cnt+1;
+	}
+	i=i+1;
+}
+if(cnt==2)
+{
+alert("This Prime Number " + n)
+document.getElementById("Result").innerHTML="This Prime Number " + n;
+}
+else
+{
+alert("This is Not PrimeNumber" + n)
+document.getElementById("Result").innerHTML="This is Not Prime Number " + n;
+}
+}
+</script>
+</head>
+<body>
+
+A Value <input type="textbox" id="txt1"/></br>
+<p id="Result">
+Result Place Here
+</p>
+<button type="button" style="width:150px;" onclick="checkEvenorOdd()">Check Even Or Odd</button></br>
+<button type="button" style="width:150px;" onclick="checkPrime()">Check Prime</button>
+</body>
+
+</html>

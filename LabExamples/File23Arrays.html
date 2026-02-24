@@ -1,0 +1,42 @@
+<html> 
+<head> 
+<title>JavaScript Example</title> 
+</head> 
+<body> 
+<script language="JavaScript1.2"> 
+names = new Array(10); 
+names[0] = "Rabbit"; 
+names[1] = "Happy"; 
+names[9] = "Dover"; 
+document.write("<br>names[0] - " + names[0] ); 
+document.write("<br>names[1] - " + names[1] ); 
+document.write("<br>names[9] - " + names[9] );
+document.write("<br>names[8] - " + names[8] );
+document.write("<br>names.length - " +names.length);
+
+pictures = new Array(); 
+pictures[30] = "Akbar"; 
+pictures[40] = "Mona Lisa"; 
+document.write("<br>pictures[40] - " + pictures[40] ); 
+document.write("<br>pictures[30] - " + pictures[30] ); 
+document.write("<br>pictures[29] - " + pictures[29] ); 
+document.write("<br>pictures.length - " +pictures.length);
+
+a=new Array();
+
+for(i=1;i<=99;i++)
+{
+a[i]=1900+i;
+}
+document.write("<br>a.length - " +a.length+ "</br>");
+document.write("<br><h1>Leap Years 1900-1999</h1></br>");
+for(i=1;i<=99;i++)
+{
+if(a[i]%4==0)
+{
+document.write(a[i]+ "</br>");
+}
+}
+</script> 
+</body> 
+</html>

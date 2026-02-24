@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log(this);
+    </script>
+  </head>
+  <body>
+    <!-- Inline Java Script -->
+    <button onclick="alert('Your Clicked Me')">Click Me</button>
+    <!-- Internal Java Script -->
+    <button onclick="showMessage()">Click Me and Give Name</button>
+    <script>
+      function showMessage() {
+        let msg = prompt("Enter any name", "Srinivasarao");
+        // alert("Your Given Name is " + msg);
+         alert(`Your Given Name is  ${msg} Garu.`);
+      }
+    </script>
+  </body>
+</html>

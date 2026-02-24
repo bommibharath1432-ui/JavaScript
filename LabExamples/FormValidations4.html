@@ -1,0 +1,32 @@
+<html>
+<head><title>Validations</title>
+<script>
+function myFunction() {
+    var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "Value too Large";
+    } 
+	else if(document.getElementById("id1").validity.rangeUnderflow)
+	{
+	txt = "Value too Low";
+	}
+		else{
+	
+        txt = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</head>
+<body>
+<p>Enter a number and click OK:</p>
+
+<input id="id1" type="number" min="1" max="100">
+<button onclick="myFunction()">OK</button>
+
+<p>If the number is greater than 100 (the input's max attribute), 
+an error message will be displayed.</p>
+
+<p id="demo"></p>
+</body>
+</html>

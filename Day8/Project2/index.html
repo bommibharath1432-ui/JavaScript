@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form-group">
+        <label>Bill Amount</label>
+        <input type="number" id="billamount" />
+      </div>
+      <div class="form-group">
+        <label>Discount</label>
+        <input type="number" id="discount" onblur="getGrossBill()" />
+      </div>
+      <div class="form-group">
+        <label>Gross Bill</label>
+        <input type="number" id="grossbill" />
+      </div>
+      <div class="divgroup">
+        <div class="form-group">
+          <label>Tax %</label>
+          <input type="number" id="tax" onblur="getTaxAmount()" />
+        </div>
+        <div class="form-group">
+          <label>Tax Amount</label>
+          <input type="number" id="taxamount" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Net Amount</label>
+        <input type="number" id="netamount" />
+      </div>
+      <div class="form-group">
+        <label>Tip Amount</label>
+        <input type="number" id="tipamount" onblur="getPaybleAmount()" />
+      </div>
+      <div class="form-group">
+        <label>Payable Bill Amount</label>
+        <input type="number" id="paybleamount" />
+      </div>
+
+      <div class="divgroup">
+              <div class="form-group">
+        <label>Split Bill</label>
+        <input type="number" id="split" onblur="getForEachAmount()" />
+      </div>
+        <div class="form-group">
+          <label>For Each</label>
+          <input type="number" id="splitamount" />
+        </div>
+        <div class="form-group">
+          <span id="result"></span>
+        </div>
+      </div>
+
+      <div class="btn-align">
+        <button onclick="payAmount()">Pay</button>
+        <button type="reset">Clear</button>
+      </div>
+    </div>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

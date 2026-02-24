@@ -1,0 +1,30 @@
+<html>
+<head><title>Java Script Validations</title></head>
+<script>
+function NumValidate() {
+    var x, text;
+    x = document.getElementById("numb").value;
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+<body>
+<form name="myForm" action="" method="post">
+
+	Name: <input type="number" name="fname" required >
+	<input type="submit" value="Submit">
+
+	<p>Please input a number between 1 and 10:</p>
+
+	<input type="number" id="numb" />
+	<button type="button" onclick="NumValidate()">Submit</button>
+
+	<p id="demo"></p>
+</form>
+</body>
+</html>

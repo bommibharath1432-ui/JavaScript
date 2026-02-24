@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script>
+function checkName()
+{
+	var x = document.getElementById("fname").value;
+	if (x == null || x == "" || x.length < 7 ) 
+	{
+	document.getElementById("para").innerHTML="User Name Must 6 Digits or Above";
+    }
+	else
+	{
+	document.getElementById("para").innerHTML="";
+	}
+	return(false);
+}
+</script>
+<body>
+
+<form action="" onsubmit="return checkName()" method="post">
+  <input type="text" id="fname"  name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<p id="para">Emty Fields are not Accept</p>
+
+</body>
+</html>

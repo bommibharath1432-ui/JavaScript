@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE>If-then statements</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function password() {
+var Ret;
+Ret = prompt('Enter Your Password',"");
+if(Ret=="KKCC") 
+{
+location = 'File1.html';
+} else 
+{
+alert("Please try again");
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<A href="javascript:password()">
+<img src="ap.jpg" name="pic1" alt="about us!" border="0" align="left">
+</A>
+<button type ="button" onclick="password()">Press Button Validate Password</button>
+<H3>Click the image to enter a password protected document. Try a wrong entry first.</H3>
+
+</BODY>
+</HTML>

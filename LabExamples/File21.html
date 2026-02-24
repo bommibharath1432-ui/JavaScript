@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function over() {
+document.getElementById("result").innerHTML="Mouse Over";
+document.getElementById("result").style.fontSize=24;
+document.getElementById("result").style.color='red';
+}
+function out() {
+document.getElementById("result").innerHTML="Mouse Leave";
+document.getElementById("result").style.fontSize=14;
+document.getElementById("result").style.color='black';
+}
+</script>
+</head>
+<body>
+<p>Bring your mouse inside the division to see the result:</p>
+<div id="dd" onmouseover="over()" onmouseout="out()">
+<h2> This is inside the division </h2>
+<p id="result"></p>
+</div>
+</body>
+</html>

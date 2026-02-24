@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>JavaScript Program1</title>
+<script>
+function changeText()
+{
+document.getElementById('para').innerHTML=document.getElementById("mytext").value;
+}
+</script>
+</head>
+<body>
+<h1>Java Script Example(InLine)</h1>
+<p id="para">How to Change the Html Content.</p>
+<input type="text" value="" id="mytext"></input>
+</br>
+<button 
+type="button" 
+onclick="document.getElementById('para').innerHTML = 'Hello JavaScript!'">
+ChanagePara
+</button>
+</br>
+<button type="button" 
+onclick="document.getElementById('para').innerHTML = ''">ClearPara
+</button>
+</br>
+<button type="button" 
+onclick="changeText()">
+Change Input Box
+</button>
+</br>
+<button type="button" 
+onclick="document.getElementById('myspan').innerHTML = 'Welcome To Span'">
+Change Span
+</button>
+</br>
+<button type="button" 
+onclick="document.getElementById('para').style.fontSize='35px'">
+Increase Font
+</button>
+</br>
+<button type="button" 
+onclick="document.getElementById('para').style.fontSize='15px'">
+Decrease Font
+</button>
+</br>
+<button type="button" 
+onclick="document.getElementById('para').style.color='red'">
+Change Color
+</button>
+</br>
+<button type="button" 
+onclick="document.getElementById('para').style.fontWeight='bold'">
+Change Bold
+</button>
+</br>
+<button type="button" 
+onclick="document.getElementById('myid').innerHTML='This is Testing of Division'">
+Change Division
+</button>
+</br>
+<button type="button" onclick="alert('Welcome to JavaScript')">
+Show Alert Box
+</button>
+</br>
+<span id="myspan"></span>
+<div style="background-color:yellow;" id="myid"></div>
+</body>
+</html>

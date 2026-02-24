@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        // let i=1;
+      // function addEvent() {
+      //   let paraElement = document.createElement("p");
+      //   let eventsElement = document.getElementById("events");
+      //   let eventsListElement = document.getElementById("events_list");
+      //   paraElement.innerHTML =i +  ") " + eventsElement.value;
+      //   eventsListElement.appendChild(paraElement);
+      //   eventsElement.value="";
+      //   i=i+1;
+      //   eventsElement.focus();
+      // }
+      function addEvent() {
+        let listElement = document.createElement("li");
+        let eventsElement = document.getElementById("events");
+        let eventsListElement = document.getElementById("events_list");
+        listElement.innerHTML = "<h4>" + eventsElement.value + "</h4>";
+        eventsListElement.appendChild(listElement);
+        eventsElement.value="";
+        // i=i+1;
+        eventsElement.focus();
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      style="display: flex; flex-direction: column; width: 300px; margin: auto"
+    >
+      <h1>Comming Events</h1>
+      <label>Enter Event name</label>
+      <input type="text" id="events" />
+      <div style="display: flex; flex-direction: row-reverse">
+        <button onclick="addEvent()" style="margin-top: 10px; width: 100px">
+          Add Event
+        </button>
+      </div>
+
+      <!-- <div id="events_list"></div> -->
+       <ol id="events_list">
+
+       </ol>
+    </div>
+  </body>
+</html>

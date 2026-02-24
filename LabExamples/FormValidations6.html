@@ -1,0 +1,27 @@
+<html>
+<head><title>Validations</title>
+<script>
+function myFunction() {
+   var textBox = document.getElementById("myTextBox");
+var textLength = textBox.value.length;
+if(textLength > 5)
+{
+    //red
+    textBox.style.backgroundColor = "red";
+}
+else
+{
+    //green
+    textBox.style.backgroundColor = "green";
+}
+}
+</script>
+</head>
+<body>
+<p>Enter Numbers Only(>=5digits)</p>
+
+<input id="myTextBox" type="text" max="20">
+<button onclick="myFunction()">OK</button>
+
+</body>
+</html>
